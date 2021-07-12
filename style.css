@@ -141,7 +141,7 @@
   background: url(header/search.svg) no-repeat scroll 16px 16px;
 }
 
-.header__input:focu s {
+.header__input:focus {
   outline: none;
   border: 1px solid #1390e5;
 }
@@ -149,7 +149,7 @@
 .content-container__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  justify-content: space-between;
   background-color: #fafafa;
   padding: 0 50px 100px 50px;
 }
@@ -179,7 +179,7 @@
 }
 .coupon::before,
 .coupon::after {
-  content: '';
+  content: "";
   display: block;
   width: 10px;
   height: 10px;
@@ -235,9 +235,6 @@
   line-height: 16px;
   color: #000000;
   opacity: 0.5;
-}
-
-.coupon__bottom {
 }
 
 .coupon_num {
@@ -359,7 +356,7 @@
 
   .sidebar__burger::before,
   .sidebar__burger::after {
-    content: '';
+    content: "";
     background-color: black;
     position: absolute;
     width: 100%;
