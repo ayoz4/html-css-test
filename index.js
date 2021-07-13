@@ -37,10 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll("html")[0].scrollTop > 27
       ) {
         header.style.paddingLeft = "68px";
+        header.style.position = "fixed";
+        header.style.top = "0";
         header.style.transition = "all 0.3s";
 
         headerInput.style.background = "none";
-        headerInput.style.paddingLeft = "16px";
+        headerInput.style.paddingLeft = "20px";
+        headerInput.style.width = "calc(100% - 30px)";
       } else {
         header.style.paddingLeft = "26px";
         header.style.position = "relative";
@@ -49,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         headerInput.style.background =
           "url(header/search.svg) no-repeat scroll 16px 16px";
         headerInput.style.width = "100%";
+        headerInput.style.paddingLeft = "44px";
       }
     }
 
