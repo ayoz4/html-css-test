@@ -117,6 +117,16 @@
 .header {
   transition: all 0.3s ease;
 }
+.content-container__content::before {
+  content:"";
+  height: 1px;
+  display: block;
+  background-color: #E5E5E5;
+  width: 100%;
+  margin-top: -30px;
+
+  
+}
 
 .header__title {
   font-weight: 600;
@@ -281,9 +291,14 @@
   .coupon {
     width: 300px;
     height: 144px;
-    background-image: url(./content-ipad/wine-ipad.svg);
   }
-
+  .coupon__title,.coupon__label,.coupon__description {
+    font-size: 14px;
+  }
+  .coupon_num {
+    margin-bottom: 5px;
+    font-size: 36px;
+  }
   .content-container {
     margin-left: 107px;
     width: 100%;
@@ -433,21 +448,16 @@
     padding-bottom: 100px;
     background-color: #fafafa;
     padding-left: 20px;
-    padding: 0 0 100px 20px;
+    padding: 0 0 100px 10px;
   }
-
+.content-container__content::before {
+  margin-top: 0;
+}
   .content-container__content {
-    padding: 27px 16px 0 0;
+    padding: 0;
   }
 
-  .mask {
-    width: 300px;
-    height: 144px;
-  }
 
-  .mask:hover {
-    background: url(./content-ipad/hover.svg) no-repeat;
-  }
 
   .header__fixed {
     display: block;
@@ -469,7 +479,7 @@
     left: -180px;
     padding: 0;
   }
-
+  .coupon__img {width: 89px;}
   .sidebar.active {
     left: 0px;
     padding-left: 0;
@@ -532,7 +542,7 @@
   }
 
   .content-container__header {
-    padding: 37px 20px 100px 21px;
+    padding: 37px 20px 0 0;
   }
 
   .content-container__content {
@@ -547,7 +557,7 @@
   .content-container__list {
     background-color: #fafafa;
     padding-bottom: 100px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
     width: 100%;
   }
@@ -563,15 +573,13 @@
   .coupon {
     width: 270px;
     height: 130px;
-    background: url(./content-iphone/wine.svg);
+
+  }
+  .coupon__title,.coupon__label,.coupon__description {
+    font-size: 12px;
+  }
+  .coupon_num {
+    font-size: 28px;
   }
 
-  .mask {
-    width: 270px;
-    height: 130px;
-  }
-
-  .mask:hover {
-    background: url(./content-iphone/hover.svg);
-  }
 }
